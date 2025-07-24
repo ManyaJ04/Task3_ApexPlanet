@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Quiz & API Task</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Responsive Quiz & API Task</h1>
+  </header>
+
+  <main>
+    <div class="box">
+      <h2>Interactive Quiz</h2>
+      <label for="topic">Select Topic:</label>
+      <select id="topic" onchange="changeTopic()">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+      </select>
+      <div id="quiz">
+        <p id="question">Loading question...</p>
+        <div id="answers"></div>
+        <p id="result"></p>
+      </div>
+    </div>
+    
+    <!-- Api for jokes -->
+
+    <div class="box">
+      <h2>Random Joke (from API)</h2>
+      <p id="joke-setup">Click the button to see a joke!</p>
+      <p id="joke-punchline"></p>
+      <button onclick="getJoke()">Get Joke</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>Created for ApexPlanet Internship Task 3</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
